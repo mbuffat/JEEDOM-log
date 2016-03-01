@@ -102,7 +102,9 @@ On peut faire la mame chose pour les logs su par www-data dans **/etc/pam.d/su**
 session [success=1 default=ignore] pam_succeed_if.so service in su quiet ruser = www-data
 @include common-session
 ```
+
 ## modification de rsyslog.conf
+
 On peut aussi réduire les logs standards en modifiant le fichier ** /etc/rsyslog.conf ** . Pour cela on édite le fichier
 et on modifie la ligne
 ```
@@ -122,6 +124,7 @@ auth,authpriv.*                 /var/log/auth.log
 ```
 
 ## réduction du niveau de log de systemd
+
 par défaut sur mon installation, le niveau de log de systemd (utilisé par JEEDOM) est trop important.
 
 dans ** /etc/systemd/system.conf ** , j'ai mis le Loglevel à  ** warning ** au lieu de ** info **
