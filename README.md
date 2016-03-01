@@ -103,7 +103,7 @@ session [success=1 default=ignore] pam_succeed_if.so service in su quiet ruser =
 @include common-session
 ```
 ## modification de rsyslog.conf
-On peut aussi réduire les logs standards en modifiant le fichier ** /etc/rsyslog.conf **. Pour cela on édite le fichier
+On peut aussi réduire les logs standards en modifiant le fichier ** /etc/rsyslog.conf ** . Pour cela on édite le fichier
 et on modifie la ligne
 ```
 *.*;auth,authpriv.none         -/var/log/syslog
@@ -130,14 +130,14 @@ dans ** /etc/systemd/system.conf ** , j'ai mis le Loglevel à  ** warning ** au 
 #LogLevel=info
 LogLevel=warning
 ```
-et de même dans ** /etc/systemd/system.conf **,
+et de même dans ** /etc/systemd/system.conf ** ,
 ```
 [Manager]
 #LogLevel=info
 LogLevel=warning
 ```
 
-## Conclusion ##
+## Conclusion 
 
 Avec ces manips  (que je ne conseille qu'à des utilisateurs avertis) j'ai réduit de façon drastique la taille des fichiers log
 et donc la fiabilité de mon système.
