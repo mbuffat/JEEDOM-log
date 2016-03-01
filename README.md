@@ -124,7 +124,7 @@ auth,authpriv.*                 /var/log/auth.log
 ## réduction du niveau de log de systemd
 par défaut sur mon installation, le niveau de log de systemd (utilisé par JEEDOM) est trop important.
 
-dans ** /etc/systemd/system.conf **, j'ai mis le Loglevel à  ** warning ** au lieu de ** info **
+dans ** /etc/systemd/system.conf ** , j'ai mis le Loglevel à  ** warning ** au lieu de ** info **
 ```
 [Manager]
 #LogLevel=info
