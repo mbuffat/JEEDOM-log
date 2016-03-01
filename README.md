@@ -124,7 +124,7 @@ auth,authpriv.*                 /var/log/auth.log
 ## réduction du niveau de log de systemd
 par défaut sur mon installation, le niveau de log de systemd (utilisé par JEEDOM) est trop important.
 
-dans **/etc/systemd/system.conf **, j'ai mis le Loglevel à  **warning** au lieu de **info**
+dans ** /etc/systemd/system.conf **, j'ai mis le Loglevel à  ** warning ** au lieu de ** info **
 ```
 [Manager]
 #LogLevel=info
@@ -136,3 +136,12 @@ et de même dans ** /etc/systemd/system.conf **,
 #LogLevel=info
 LogLevel=warning
 ```
+
+## Conclusion ##
+
+Avec ces manips  (que je ne conseille qu'à des utilisateurs avertis) j'ai réduit de façon drastique la taille des fichiers log
+et donc la fiabilité de mon système.
+
+- Pour fiabiliser encore plus le système, j'ai récupérer un vieux disque USB, qui est la majorité du temps en hibernation et je l'utilise pour faire une copie avec rsync de ma carte SD.
+ 
+- Il faut cependant une carte SD de bonne qualité pour fiabiliser le système
