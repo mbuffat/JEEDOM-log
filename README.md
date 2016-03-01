@@ -149,4 +149,6 @@ et donc la fiabilité de mon système.
  
 - Il faut cependant une carte SD de bonne qualité pour fiabiliser le système
 
- - Si vus avez des astuces pour diminuer encore la taille des logs, je suis preneur :D
+Enfin si vous avez des astuces pour diminuer encore la taille des logs, je suis preneur!!
+
+Marc BUFFAT, mars 2016
