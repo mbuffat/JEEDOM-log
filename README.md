@@ -85,7 +85,7 @@ Pour éliminer les logs des sudo par www-data il faut modifier **/etc/pam.d/sudo
 session [success=1 default=ignore] pam_succeed_if.so service in sudo quiet uid = 0 ruser = www-data
 @include common-session-noninteractive
 ```
-puis en utilisant l'utilitaire ** visudo ** on ajoute la ligne suivante :
+puis en utilisant l'utilitaire **visudo** on ajoute la ligne suivante :
 
 ```
 Defaults:www-data    !syslog
@@ -127,13 +127,13 @@ auth,authpriv.*                 /var/log/auth.log
 
 par défaut sur mon installation, le niveau de log de systemd (utilisé par JEEDOM) est trop important.
 
-dans ** /etc/systemd/system.conf ** , j'ai mis le Loglevel à  ** warning ** au lieu de ** info **
+dans **/etc/systemd/system.conf** , j'ai mis le Loglevel à  **warning** au lieu de **info**
 ```
 [Manager]
 #LogLevel=info
 LogLevel=warning
 ```
-et de même dans ** /etc/systemd/system.conf ** ,
+et de même dans **/etc/systemd/system.conf** ,
 ```
 [Manager]
 #LogLevel=info
@@ -148,3 +148,5 @@ et donc la fiabilité de mon système.
 - Pour fiabiliser encore plus le système, j'ai récupérer un vieux disque USB, qui est la majorité du temps en hibernation et je l'utilise pour faire une copie avec rsync de ma carte SD.
  
 - Il faut cependant une carte SD de bonne qualité pour fiabiliser le système
+
+ - Si vus avez des astuces pour diminuer encore la taille des logs, je suis preneur :D
