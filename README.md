@@ -16,7 +16,7 @@ Au lieu d'écrire les logs sur la carte SD, on va les écrire en mémoire en cr�
 ** /etc/fstab **. On en profite aussi pour créer le fichier /tmp sur un filesystem tmpfs pour optimiser JEEDOM V2.0 (comme indiquer sur la documentation JEEDOM)
 ```
 # fichier log
-tmpfs    /var/log    tmpfs    defaults,noatime,nosuid,mode=0755,size=10M    0 0
+tmpfs    /var/log    tmpfs    defaults,noatime,nosuid,mode=0755,size=20M    0 0
 # optimisation jeedom
 tmpfs    /tmp 	     tmpfs    defaults,noatime,nosuid,size=64m 0 0
 ```
